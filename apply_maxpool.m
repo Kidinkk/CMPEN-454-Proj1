@@ -1,9 +1,9 @@
-function outarray = apply_maxpool(x)
-    x = double(x);
+function outarray = apply_maxpool(inarray)
+    inarray = double(inarray);
 
-    size_x = size(x, 1)/2;
-    size_y = size(x, 2)/2;
-    num_channels = size(x, 3);
+    size_x = size(inarray, 1)/2;
+    size_y = size(inarray, 2)/2;
+    num_channels = size(inarray, 3);
     
     outarray = zeros(size_x, size_y, num_channels);
 
