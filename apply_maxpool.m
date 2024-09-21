@@ -10,7 +10,7 @@ function outarray = apply_maxpool(inarray)
     for i=1:num_channels
         for j=1:size_x
             for k=1:size_y
-                block = x((2*j-1):(2*j), (2*k-1):(2*k), i);
+                block = inarray((2*j-1):(2*j), (2*k-1):(2*k), i);
                 outarray(j,k,i)=max(block(:));
             end
         end
